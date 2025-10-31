@@ -142,7 +142,7 @@ export default function CreateBountyCard() {
                   <div className="mt-4 text-xs sm:text-sm bg-muted/50 p-3 rounded-md break-all">
                     <p className="font-medium text-foreground mb-1">Transaction Hash:</p>
                     <a
-                      href={`https://flow-sepolia.blockscout.com/tx/${txHash}`}
+                      href={`https://evm-testnet.flowscan.io//tx/${txHash}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-500 underline break-all"
