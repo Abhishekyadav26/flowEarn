@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThirdwebProvider } from "thirdweb/react";
+import { Navbar }  from "@/components/user-compo/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "thirdweb SDK + Next starter",
+  title: "Flow Earn",
   description:
-    "Starter template for using thirdweb SDK with Next.js App router",
+    "Decentralized Task Hub on Flow Blockchain - Earn Crypto by Completing Tasks and Bounties",
 };
 
 export default function RootLayout({
@@ -17,9 +18,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body className={inter.className}>
-        <ThirdwebProvider>{children}</ThirdwebProvider>
+        <ThirdwebProvider>
+          <Navbar />
+          {children}
+        </ThirdwebProvider>
       </body>
     </html>
   );
