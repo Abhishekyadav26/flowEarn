@@ -10,7 +10,7 @@ import { WalletConnectButton } from "@/components/user-compo/connect-button";
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "Github", href: "https://github.com/Abhishekyadav26/flow", external: true },
+  { name: "Github", href: "https://github.com/Abhishekyadav26/flowearn", external: true },
 ];
 
 export function Navbar() {
