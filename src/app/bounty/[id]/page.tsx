@@ -20,7 +20,7 @@ export default function BountyDetail() {
     () =>
       getContract({
         client,
-        address: "0x52573FDC1af65AB4d09C9fEe193E9775e1676FE2",
+        address: "0xa6657D9E736dEF639906FB360Ca340d1d1eFA9db",
         chain: defineChain(545),
       }),
     []
