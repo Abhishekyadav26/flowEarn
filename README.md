@@ -1,3 +1,4 @@
+<img width="1622" height="772" alt="Screenshot from 2025-11-01 03-43-20" src="https://github.com/user-attachments/assets/8f71e877-7595-45d4-8f71-1b0b7c77baa1" />
 
 
 # 🪙 Flow-Earn: Decentralized Task Hub on Flow
@@ -9,7 +10,7 @@
 ![Solidity](https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white)
 
 **Earn, build, and fund the future — on your phone, for the planet.**
-*Built for the Flow Hackathon 2025*
+*Built for the Flow*
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-🚀-green?style=for-the-badge)](https://flow-earn.vercel.app/)
 [![Smart Contract](https://img.shields.io/badge/Smart%20Contract-📄-orange?style=for-the-badge)](https://evm-testnet.flowscan.io/address/0xa6657D9E736dEF639906FB360Ca340d1d1eFA9db)
@@ -26,14 +27,13 @@ flowscan (https://evm-testnet.flowscan.io/address/0xa6657D9E736dEF639906FB360Ca3
 
 ## 🎯 Project Overview
 
-**Flow-earn** is a **decentralized bounty platform** built on **Flow Sepolia Testnet**, enabling anyone to **post and complete tasks** — from data scraping to graphic design — and **earn cUSD instantly** upon approval. No middlemen. No high fees. Just **mobile-first, instant, carbon-negative bounties**.
+**Flow-earn** is a **decentralized bounty platform** built on **EVM on Flow Testnet**, enabling anyone to **post and complete tasks** — from data scraping to graphic design — and **earn FUSDC instantly** upon approval. No middlemen. No high fees. Just **mobile-first, instant, carbon-negative bounties**.
 
 ### 🌟 Key Features
 - 📱 **Mobile-First Design** - Accessible on any smartphone
-- 💰 **Instant Payments** - CCUSD rewards released automatically
+- 💰 **Instant Payments** - FUSDC rewards released automatically
 - 🔒 **Trustless Escrow** - Smart contracts handle all transactions
 - 🌍 **Global Access** - Works anywhere with internet
-- 🌱 **Carbon Negative** - Built on Flow's eco-friendly blockchain
 
 ---
 
@@ -47,7 +47,7 @@ Traditional bounty and freelancing platforms face critical limitations:
 | 💸 **High Fees**           | 5-20% platform commissions    | <1% blockchain fees |
 | 🚫 **Exclusion**           | Requires bank accounts/laptops| Mobile phone number login |
 | 📵 **Desktop-Only**        | Excludes 1.9B mobile users    | Mobile-first design |
-| 🌍 **Geographic Barriers** | Limited to certain countries | Global cUSD payments |
+| 🌍 **Geographic Barriers** | Limited to certain countries  | Global cUSD payments |
 
 ---
 
@@ -80,9 +80,9 @@ graph TD
 
 #### 🧑‍💻 **For Workers**
 - Browse available tasks on mobile
-- Accept tasks with single tap
+- Accept tasks with a single tap
 - Submit proof via IPFS or file upload
-- Receive instant cUSD payments
+- Receive instant FUSDC payments
 
 #### 🔍 **Smart Contract Verification**
 - Automatic escrow management
@@ -99,7 +99,7 @@ graph TD
 | 📱 **Mobile-First** | 1.9B unbanked users can access via phone number |
 | 💸 **Sub-cent Fees** | Micro-bounties as low as $0.10 are viable |
 | 🌿 **Carbon-Negative** | Every task supports climate action (ReFi) |
-| 🌎 **Global Reach** | Stable cUSD payments worldwide |
+| 🌎 **Global Reach** | Stable fUSDC payments worldwide |
 | 🔐 **Phone Auth** | No seed phrases needed |
 | ⚡ **Fast Finality** | Near-instant transaction confirmation |
 
@@ -110,7 +110,7 @@ graph TD
 ### 🧱 Smart Contract Stack
 - **Language**: Solidity ^0.8.19
 - **Framework**: Hardhat
-- **Network**: Flow Sepolia Testnet
+- **Network**: EVM on Flow Testnet
 - **Features**: Escrow, Task Management, Payment Processing
 
 ### 🎨 Frontend Stack
@@ -177,7 +177,7 @@ function getTask(uint256 _taskId) view returns (Task)
 - Node.js 18+
 - npm or yarn
 - Flow wallet (Valora, MetaMask, etc.)
-- flow testnet FUSDc
+- flow testnet FUSDC
 
 ### Quick Start
 
@@ -200,7 +200,7 @@ npm run dev
 ```bash
 # Create .env.local file
 NEXT_PUBLIC_FLOW_RPC_URL=https://545.rpc.thirdweb.com/${THIRDWEB_CLIENT_ID}
-NEXT_PUBLIC_CONTRACT_ADDRESS=0x52573FDC1af65AB4d09C9fEe193E9775e1676FE2
+NEXT_PUBLIC_CONTRACT_ADDRESS=0xa6657D9E736dEF639906FB360Ca340d1d1eFA9db
 ```
 
 ---
